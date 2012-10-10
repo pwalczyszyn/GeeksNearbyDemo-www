@@ -27,7 +27,7 @@
     <preference name="webviewbounce" value="false"/>
 
     <!-- splash screen will be hidden programatically -->
-    <preference name="auto-hide-splash-screen" value="false"/>
+    <preference name="auto-hide-splash-screen" value="true"/>
 
     <!-- iOS icons -->
     <icon src="icons/ios/icon.png" width="57" height="57"/>
