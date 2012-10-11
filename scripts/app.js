@@ -6,6 +6,8 @@
  * Time: 6:01 PM
  */
 
+var selectedGeek;
+
 function onBodyLoad() {
 
     if (navigator.userAgent.match(/(iPad|iPhone|Android)/))
@@ -13,6 +15,21 @@ function onBodyLoad() {
     else
         onDeviceReady();
 
+    // Listening for clicks on #lstGeeksNearby list items
+    $('#lstGeeksNearby li').click(function (event) {
+
+        // Setting selected geek instance
+        selectedGeek = $(event.currentTarget).jqmData('user');
+
+        // This is just for debugging
+        if (selectedGeek == undefined) selectedGeek = {escape:function (propName) {
+            return 'jsmith';
+        }};
+
+        // Transitioning to details page
+        $.mobile.changePage('#details');
+
+    });
 }
 
 function onDeviceReady() {

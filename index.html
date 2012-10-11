@@ -23,16 +23,30 @@
 
     <!-- JS file with app logic -->
     <script type="text/javascript" src="scripts/app.js"></script>
+
+    <!-- JS filt that handles details view logic -->
+    <script type="text/javascript" src="scripts/details.js"></script>
+
 </head>
 <body onload="onBodyLoad()">
 
-<div data-role="page">
+<div id="list" data-role="page">
     <div data-role="header">
         <h1>GeeksNearby Demo</h1>
     </div>
 
     <div data-role="content">
-        <ul id="lstGeeksNearby" data-role="listview"/>
+        <ul id="lstGeeksNearby" data-role="listview">
+        </ul>
+    </div>
+</div>
+
+<div id="details" data-role="page">
+    <div data-role="header">
+        <h1>Geek Info</h1>
+    </div>
+    <div data-role="content">
+        <h1 id="lblUsername">This is a geek</h1>
     </div>
 </div>
 

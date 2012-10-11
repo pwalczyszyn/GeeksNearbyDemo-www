@@ -26,13 +26,23 @@
 </head>
 <body onload="onBodyLoad()">
 
-<div data-role="page">
+<div id="list" data-role="page">
     <div data-role="header">
         <h1>GeeksNearby Demo</h1>
     </div>
 
     <div data-role="content">
-        <ul id="lstGeeksNearby" data-role="listview"/>
+        <ul id="lstGeeksNearby" data-role="listview">
+        </ul>
+    </div>
+</div>
+
+<div id="details" data-role="page">
+    <div data-role="header">
+        <h1>Geek Info</h1>
+    </div>
+    <div data-role="content">
+        <h1 id="lblUsername">This is a geek</h1>
     </div>
 </div>
 
