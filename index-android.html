@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GeeksNearby Demo</title>
+    <title>GeeksNearby Advanced Demo</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
@@ -9,32 +9,16 @@
     <!-- jQuery Mobile styles -->
     <link rel="stylesheet" href="scripts/libs/jquery.mobile/jquery.mobile-1.2.0.css"/>
 
-    <!-- jQuery script -->
-    <script src="scripts/libs/jquery/jquery-1.8.2.js"></script>
-
-    <!-- jQuery Mobile script -->
-    <script src="scripts/libs/jquery.mobile/jquery.mobile-1.2.0.js"></script>
-
-    <!-- Parse.com script -->
-    <script type="text/javascript" src="scripts/libs/parse/parse-1.1.5.js"></script>
-
     <!-- Referencing PhoneGap JS -->
     <script src="scripts/libs/cordova/cordova-android-2.1.0.js"></script>
 
-    <!-- JS file with app logic -->
-    <script type="text/javascript" src="scripts/app.js"></script>
+    <!-- Loading app.js with RequireJS -->
+    <script data-main="scripts/app" src="scripts/libs/require/require.js"></script>
+
 </head>
-<body onload="onBodyLoad()">
+<body>
 
-<div data-role="page">
-    <div data-role="header">
-        <h1>GeeksNearby Demo</h1>
-    </div>
-
-    <div data-role="content">
-
-    </div>
-</div>
+<div id="container"/>
 
 </body>
 </html>
